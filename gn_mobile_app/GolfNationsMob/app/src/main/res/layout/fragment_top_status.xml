@@ -1,0 +1,129 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.golfnationsmob.GolfView.NewRound.Gps.MapsActivity"
+    android:background="@drawable/bgcolor">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#10171f"
+        android:id="@+id/linearLayout15">
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:id="@+id/mapleftarrow"
+            android:background="@drawable/leftnav"
+            android:layout_weight=".15" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:text="1"
+                android:id="@+id/mapholeNumber"
+                android:layout_gravity="left|center_vertical"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="50dp"
+                android:textStyle="bold"
+                android:background="#accb3f"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:layout_width="34dp"
+                android:layout_height="15dp"
+                android:text="PAR"
+                android:id="@+id/textView4"
+                android:layout_gravity="top|left|center"
+                android:layout_marginLeft="66dp"
+                android:background="#3b4c60"
+                android:textColor="#9ab4d5"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textSize="10dp" />
+
+            <TextView
+                android:layout_width="34dp"
+                android:layout_height="wrap_content"
+                android:text="4"
+                android:id="@+id/pargps"
+                android:layout_gravity="right|bottom"
+                android:background="#3b4c60"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:paddingBottom="2dp"
+                android:textAlignment="center"
+                android:layout_below="@+id/textView4"
+                android:layout_alignStart="@+id/textView4"
+                android:layout_alignLeft="@+id/textView4" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight=".45">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:text="360"
+                android:id="@+id/mapdistprev"
+                android:textSize="18dp"
+                android:textColor="#9ab4d5"
+                android:layout_marginTop="4dp"
+                android:layout_weight=".30"
+                android:layout_gravity="center_vertical" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="370"
+                android:id="@+id/mapdiscurrent"
+                android:textSize="30dp"
+                android:layout_marginLeft="2dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:layout_marginRight="2dp"
+                android:layout_weight=".35"
+                android:layout_gravity="center_vertical" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:text="389"
+                android:id="@+id/mapdistnext"
+                android:textSize="18dp"
+                android:textColor="#9ab4d5"
+                android:layout_marginTop="4dp"
+                android:layout_weight=".30"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:id="@+id/maprightarrow"
+            android:background="@drawable/rightnav"
+            android:layout_weight=".15"
+            android:layout_marginLeft="0dp" />
+
+    </LinearLayout>
+
+</FrameLayout>

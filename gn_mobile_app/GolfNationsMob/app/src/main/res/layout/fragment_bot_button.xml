@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="3"
+    tools:context="com.golfnationsmob.GolfView.NewRound.Gps.BotButton">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="3"
+        android:id="@+id/linearLayout17">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:background="#10171F"
+            android:layout_weight="1"
+            android:id="@+id/LINEARSCOREMAPVIEW">
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="20dp"
+                android:id="@+id/User3propic"
+                android:background="@drawable/score"
+                android:layout_gravity="center"
+                android:layout_marginLeft="22dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SCORE"
+                android:id="@+id/IDSCOREMAPVIEW"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:background="#10171F"
+            android:layout_weight="1"
+            android:id="@+id/LINEARSHOTSMAPVIEW">
+
+            <ImageView
+                android:layout_width="19dp"
+                android:layout_height="20dp"
+                android:id="@+id/User4propic"
+                android:background="@drawable/shots"
+                android:layout_marginLeft="15dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SHOTS"
+                android:id="@+id/IDSHOTSMAPVIEW"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:background="#51677e"
+            android:layout_weight="1"
+            android:id="@+id/LINEARGPSMAPVIEW">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="20dp"
+                android:id="@+id/imageView6"
+                android:background="@drawable/gpsselected"
+                android:layout_marginLeft="26dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GPS"
+                android:id="@+id/IDGPSMAPVIEW"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:textSize="15dp"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

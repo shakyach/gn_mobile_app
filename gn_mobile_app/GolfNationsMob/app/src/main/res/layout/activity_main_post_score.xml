@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.golfnationsmob.GolfView.PostScore.MainPostScore"
+    android:background="#ffffff">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/PSscrollView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/linearLayoutps"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="15dp"
+                android:background="#ebedf1"
+                android:id="@+id/PSrelativeLayout2">
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/UserpropicPS"
+                    android:background="@drawable/profile_default"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp" />
+
+
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:text="EDIT"
+                    android:id="@+id/PSeditbutton"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="0dp"
+                    android:textColor="#62768b"
+                    android:background="@drawable/trpr"
+                    android:textSize="16dp"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Handicap:"
+                    android:id="@+id/PShandicapid"
+                    android:textSize="14dp"
+                    android:textColor="#6a7d91"
+                    android:layout_alignBottom="@+id/UserpropicPS"
+                    android:layout_alignLeft="@+id/PSgolferName"
+                    android:layout_alignStart="@+id/PSgolferName"
+                    android:layout_marginBottom="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="5"
+                    android:id="@+id/PShandicapidvalue"
+                    android:layout_toRightOf="@+id/PShandicapid"
+                    android:layout_toEndOf="@+id/PShandicapid"
+                    android:layout_marginLeft="2dp"
+                    android:layout_alignTop="@+id/PShandicapid"
+                    android:textColor="#62768b"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="| Score Avarage:"
+                    android:id="@+id/PSscoreavgid"
+                    android:layout_alignTop="@+id/PShandicapid"
+                    android:layout_toRightOf="@+id/PShandicapidvalue"
+                    android:layout_toEndOf="@+id/PShandicapidvalue"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="4dp"
+                    android:textColor="#6a7d91" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="82"
+                    android:id="@+id/PSscoreavgidvalue"
+                    android:layout_alignTop="@+id/PSscoreavgid"
+                    android:layout_toLeftOf="@+id/PSeditbutton"
+                    android:layout_toRightOf="@+id/PSscoreavgid"
+                    android:layout_toEndOf="@+id/PSscoreavgid"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="2dp"
+                    android:textColor="#62768b" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You"
+                    android:id="@+id/PSgolferName"
+                    android:layout_above="@+id/PShandicapid"
+                    android:textColor="#10171f"
+                    android:textSize="17dp"
+                    android:layout_toEndOf="@id/UserpropicPS"
+                    android:layout_toRightOf="@id/UserpropicPS"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="font/Roboto-Regular_0.ttf" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:text="@string/TEXTCOURSE"
+                android:id="@+id/PScoursttext"
+                android:textColor="#1a2531"
+                android:textSize="15dp"
+                android:layout_below="@+id/PSrelativeLayout2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="6dp"
+                android:fontFamily="font/Roboto-Regular_0.ttf" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="#EBEDF1"
+                android:id="@+id/PSlinearLayoutcourseselect"
+                android:weightSum="1"
+                android:layout_below="@+id/PScoursttext"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:layout_width="220dp"
+                    android:layout_height="45dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="McDowell Mountain Ranch"
+                    android:id="@+id/PSnearestcourse"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#10171f"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="font/Roboto-Regular_0.ttf" />
+
+                <Button
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:id="@+id/PSrefresh"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/refesh_504"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:id="@+id/PScourselinear"
+                    android:gravity="right"
+                    android:layout_marginRight="10dp">
+
+                    <Button
+                        android:layout_width="14dp"
+                        android:layout_height="22dp"
+                        android:id="@+id/PScourseselect"
+                        android:layout_marginTop="22dp"
+                        android:background="@drawable/rightarrow"
+                        android:layout_marginLeft="40dp"
+                        android:visibility="visible" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:text="TEES"
+                android:id="@+id/PStees"
+                android:textColor="#1a2531"
+                android:textSize="15dp"
+                android:layout_below="@+id/PSlinearLayoutcourseselect"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="6dp"
+                android:fontFamily="font/Roboto-Regular_0.ttf" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="#EBEDF1"
+                android:id="@+id/PSlinearLayouttees"
+                android:weightSum="1"
+                android:layout_below="@+id/PStees"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:layout_width="220dp"
+                    android:layout_height="45dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Select...."
+                    android:id="@+id/PSTeestext"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#10171f"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="font/Roboto-Regular_0.ttf" />
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right"
+                    android:layout_marginRight="10dp">
+
+                    <Button
+                        android:layout_width="14dp"
+                        android:layout_height="22dp"
+                        android:id="@+id/PSteesSelct"
+                        android:background="@drawable/rightarrow"
+                        android:visibility="visible"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:text="DATE"
+                android:id="@+id/PSDATE"
+                android:textColor="#1a2531"
+                android:textSize="15dp"
+                android:layout_below="@+id/PSlinearLayouttees"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="6dp"
+                android:fontFamily="font/Roboto-Regular_0.ttf" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="#EBEDF1"
+                android:id="@+id/PSlinearLayoutDATE"
+                android:weightSum="1"
+                android:layout_below="@+id/PSDATE"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="New Text"
+                    android:id="@+id/dateid"
+                    android:textColor="#10171f"
+                    android:textSize="17dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="font/Roboto-Regular_0.ttf" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentBottom="true"
+                android:weightSum="2"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp">
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:text="Hole by Hole"
+                    android:layout_weight="1"
+                    android:id="@+id/HOLEBHOLE"
+                    android:background="#accb3f"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="16dp"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:text="Total Score"
+                    android:layout_weight="1"
+                    android:id="@+id/TOTALSCORE"
+                    android:layout_marginLeft="10dp"
+                    android:background="#accb3f"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="16dp"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:text="ScoreCard Photo"
+                    android:layout_weight="1"
+                    android:id="@+id/SCOREPHO"
+                    android:layout_marginLeft="10dp"
+                    android:background="#accb3f"
+                    android:layout_gravity="right"
+                    android:textSize="16dp"
+                    android:textColor="#ffffff"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/linearLayoutps"
+        android:layout_alignParentBottom="true"
+        android:weightSum="2"
+        android:background="#10171f">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="CANCEL"
+            android:id="@+id/PScancel"
+            android:background="#10171f"
+            android:textColor="#ffffff"
+
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_gravity="left|bottom"
+            android:textAlignment="center"
+            android:layout_marginRight="40dp"
+            android:fontFamily="font/Roboto-Regular_0.ttf" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text=""
+            android:background="#10171f"
+            android:textColor="#ffffff"
+
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_gravity="left|bottom"
+            android:textAlignment="center"
+            android:layout_marginLeft="120dp" />
+    </LinearLayout>
+
+</RelativeLayout>

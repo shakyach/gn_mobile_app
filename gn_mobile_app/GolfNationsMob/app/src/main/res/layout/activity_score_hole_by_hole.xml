@@ -1,0 +1,1121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.golfnationsmob.GolfView.PostScore.ScoreHoleByHole"
+    android:id="@+id/main_layoutHBH"
+    android:background="#ffffff">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:scrollbars="none"
+        android:layout_marginBottom="50dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linearHBH">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FRONT"
+                android:id="@+id/HBHFronttext"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="25dp"
+                android:textColor="#10171F"
+                android:textSize="16dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="font/Roboto-Regular_0.ttf" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/horizontalScrollViewFront"
+                android:layout_below="@+id/HBHFronttext"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:fillViewport="false"
+                android:layout_marginRight="10dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:layout_alignTop="@+id/horizontalScrollViewFront"
+                        android:background="#accb3f">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="1"
+                            android:gravity="center"
+                            android:id="@+id/HBH_Text_1"
+                            android:textColor="#ffffff"
+                            android:textSize="20dp" />
+
+                        <FrameLayout
+                            android:layout_width="46dp"
+                            android:layout_height="match_parent"
+                            android:background="#ffffff"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginBottom="2dp">
+
+                            <EditText
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:id="@+id/HBH_EditText_1"
+                                android:gravity="center"
+                                android:inputType="number"
+                                android:ems="10"
+                                android:maxLength="2"
+                                android:background="#FFFFFF"
+                                android:layout_gravity="center" />
+                        </FrameLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:layout_alignTop="@+id/horizontalScrollViewFront"
+
+                        android:background="#accb3f"
+                        android:layout_marginLeft="4dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="2"
+                            android:gravity="center"
+                            android:id="@+id/HBH_Text_2"
+                            android:textColor="#ffffff"
+                            android:textSize="20dp" />
+                        <FrameLayout
+                            android:layout_width="46dp"
+                            android:layout_height="match_parent"
+                            android:background="#ffffff"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginBottom="2dp">
+
+                            <EditText
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:id="@+id/HBH_EditText_2"
+                                android:gravity="center"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:ems="10"
+                                android:background="#FFFFFF"
+                                android:layout_gravity="center" />
+                        </FrameLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:layout_alignTop="@+id/horizontalScrollViewFront"
+
+                        android:background="#accb3f"
+                        android:layout_marginLeft="4dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="3"
+                            android:gravity="center"
+                            android:id="@+id/HBH_Text_3"
+                            android:textColor="#ffffff"
+                            android:textSize="20dp" />
+                        <FrameLayout
+                            android:layout_width="46dp"
+                            android:layout_height="match_parent"
+                            android:background="#ffffff"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginBottom="2dp">
+
+                            <EditText
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:id="@+id/HBH_EditText_3"
+                                android:gravity="center"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:ems="10"
+                                android:background="#FFFFFF"
+                                android:layout_gravity="center" />
+                        </FrameLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:layout_alignTop="@+id/horizontalScrollViewFront"
+
+                        android:background="#accb3f"
+                        android:layout_marginLeft="4dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="4"
+                            android:gravity="center"
+                            android:id="@+id/HBH_Text_4"
+                            android:textColor="#ffffff"
+                            android:textSize="20dp" />
+                        <FrameLayout
+                            android:layout_width="46dp"
+                            android:layout_height="match_parent"
+                            android:background="#ffffff"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginBottom="2dp">
+
+                            <EditText
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:id="@+id/HBH_EditText_4"
+                                android:background="#FFFFFF"
+                                android:inputType="number"
+                                android:ems="10"
+                                android:maxLength="2"
+                                android:gravity="center"
+                                android:layout_gravity="center" />
+                        </FrameLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:layout_alignTop="@+id/horizontalScrollViewFront"
+
+                        android:background="#accb3f"
+                        android:layout_marginLeft="4dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="5"
+                            android:gravity="center"
+                            android:id="@+id/HBH_Text_5"
+                            android:textColor="#ffffff"
+                            android:textSize="20dp" />
+                        <FrameLayout
+                            android:layout_width="46dp"
+                            android:layout_height="match_parent"
+                            android:background="#ffffff"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginBottom="2dp">
+
+                            <EditText
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:id="@+id/HBH_EditText_5"
+                                android:background="#FFFFFF"
+                                android:inputType="number"
+                                android:ems="10"
+                                android:maxLength="2"
+                                android:gravity="center"
+                                android:layout_gravity="center" />
+                        </FrameLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:layout_alignTop="@+id/horizontalScrollViewFront"
+
+                        android:background="#accb3f"
+                        android:layout_marginLeft="4dp"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="6"
+                            android:gravity="center"
+                            android:id="@+id/HBH_Text_6"
+                            android:textColor="#ffffff"
+                            android:textSize="20dp" />
+                        <FrameLayout
+                            android:layout_width="46dp"
+                            android:layout_height="match_parent"
+                            android:background="#ffffff"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginBottom="2dp">
+
+                            <EditText
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:id="@+id/HBH_EditText_6"
+                                android:background="#FFFFFF"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:layout_gravity="center" />
+                        </FrameLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:layout_alignTop="@+id/horizontalScrollViewFront"
+
+                        android:background="#accb3f"
+                        android:layout_marginLeft="4dp"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="7"
+                            android:gravity="center"
+                            android:id="@+id/HBH_Text_7"
+                            android:textColor="#ffffff"
+                            android:textSize="20dp" />
+                        <FrameLayout
+                            android:layout_width="46dp"
+                            android:layout_height="match_parent"
+                            android:background="#ffffff"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginBottom="2dp">
+
+                            <EditText
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:id="@+id/HBH_EditText_7"
+                                android:background="#FFFFFF"
+                                android:maxLength="2"
+                                android:inputType="number"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:layout_gravity="center" />
+                        </FrameLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:layout_alignTop="@+id/horizontalScrollViewFront"
+
+                        android:background="#accb3f"
+                        android:layout_marginLeft="4dp"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="8"
+                            android:gravity="center"
+                            android:id="@+id/HBH_Text_8"
+                            android:textSize="20dp"
+                            android:textColor="#ffffff" />
+                        <FrameLayout
+                            android:layout_width="46dp"
+                            android:layout_height="match_parent"
+                            android:background="#ffffff"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginBottom="2dp">
+
+                            <EditText
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:id="@+id/HBH_EditText_8"
+                                android:gravity="center"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:ems="10"
+                                android:background="#FFFFFF"
+                                android:layout_gravity="center" />
+                        </FrameLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:layout_alignTop="@+id/horizontalScrollViewFront"
+
+                        android:background="#accb3f"
+                        android:layout_marginLeft="4dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="9"
+                            android:gravity="center"
+                            android:id="@+id/HBH_Text_9"
+                            android:textColor="#ffffff"
+                            android:textSize="20dp" />
+                        <FrameLayout
+                            android:layout_width="46dp"
+                            android:layout_height="match_parent"
+                            android:background="#ffffff"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginBottom="2dp">
+
+                            <EditText
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:id="@+id/HBH_EditText_9"
+                                android:gravity="center"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:ems="10"
+                                android:background="#FFFFFF"
+                                android:layout_gravity="center" />
+                        </FrameLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:layout_alignTop="@+id/horizontalScrollViewFront"
+
+                        android:background="#accb3f"
+                        android:layout_marginLeft="4dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="out"
+                            android:gravity="center"
+                            android:id="@+id/HBH_Text_outin1"
+                            android:textColor="#ffffff"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:layout_width="46dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/HBH_EditText_outin1"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:ems="10"
+                            android:background="#FFFFFF"
+                            android:textColor="#10171F"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginBottom="2dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BACK"
+                android:id="@+id/HBHBacktext"
+                android:layout_marginTop="31dp"
+                android:textColor="#10171F"
+                android:textSize="16dp"
+                android:layout_below="@+id/horizontalScrollViewFront"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="font/Roboto-Regular_0.ttf" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/horizontalScrollViewBack"
+                android:layout_below="@+id/HBHBacktext"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:visibility="visible"
+                android:layout_marginRight="10dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:layout_alignTop="@+id/horizontalScrollViewBack"
+                        android:background="#accb3f">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="10"
+                            android:gravity="center"
+                            android:id="@+id/HBH_Text_10"
+                            android:textColor="#ffffff"
+                            android:textSize="20dp" />
+                        <FrameLayout
+                            android:layout_width="46dp"
+                            android:layout_height="match_parent"
+                            android:background="#ffffff"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginBottom="2dp">
+
+                            <EditText
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:id="@+id/HBH_EditText_10"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:maxLength="2"
+                                android:inputType="number"
+                                android:ems="10"
+                                android:layout_gravity="center" />
+                        </FrameLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:layout_alignTop="@+id/horizontalScrollViewBack"
+
+                        android:background="#accb3f"
+                        android:layout_marginLeft="4dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="11"
+                            android:gravity="center"
+                            android:id="@+id/HBH_Text_11"
+                            android:textColor="#ffffff"
+                            android:textSize="20dp" />
+                        <FrameLayout
+                            android:layout_width="46dp"
+                            android:layout_height="match_parent"
+                            android:background="#ffffff"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginBottom="2dp">
+
+                            <EditText
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:id="@+id/HBH_EditText_11"
+                                android:gravity="center"
+                                android:background="#FFFFFF"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:ems="10"
+                                android:layout_gravity="center" />
+                        </FrameLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:layout_alignTop="@+id/horizontalScrollViewBack"
+
+                        android:background="#accb3f"
+                        android:layout_marginLeft="4dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="12"
+                            android:gravity="center"
+                            android:id="@+id/HBH_Text_12"
+                            android:textColor="#ffffff"
+                            android:textSize="20dp" />
+                        <FrameLayout
+                            android:layout_width="46dp"
+                            android:layout_height="match_parent"
+                            android:background="#ffffff"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginBottom="2dp">
+
+                            <EditText
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:id="@+id/HBH_EditText_12"
+                                android:background="#FFFFFF"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:layout_gravity="center" />
+                        </FrameLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:layout_alignTop="@+id/horizontalScrollViewBack"
+
+                        android:background="#accb3f"
+                        android:layout_marginLeft="4dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="13"
+                            android:gravity="center"
+                            android:id="@+id/HBH_Text_13"
+                            android:textColor="#ffffff"
+                            android:textSize="20dp" />
+                        <FrameLayout
+                            android:layout_width="46dp"
+                            android:layout_height="match_parent"
+                            android:background="#ffffff"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginBottom="2dp">
+
+                            <EditText
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:id="@+id/HBH_EditText_13"
+                                android:background="#FFFFFF"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:layout_gravity="center" />
+                        </FrameLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:layout_alignTop="@+id/horizontalScrollViewBack"
+
+                        android:background="#accb3f"
+                        android:layout_marginLeft="4dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="14"
+                            android:gravity="center"
+                            android:id="@+id/HBH_Text_14"
+                            android:textColor="#ffffff"
+                            android:textSize="20dp" />
+                        <FrameLayout
+                            android:layout_width="46dp"
+                            android:layout_height="match_parent"
+                            android:background="#ffffff"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginBottom="2dp">
+
+                            <EditText
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:id="@+id/HBH_EditText_14"
+                                android:background="#FFFFFF"
+                                android:inputType="number"
+                                android:ems="10"
+                                android:maxLength="2"
+                                android:gravity="center"
+                                android:layout_gravity="center" />
+                        </FrameLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:layout_alignTop="@+id/horizontalScrollViewBack"
+
+                        android:background="#accb3f"
+                        android:layout_marginLeft="4dp"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="15"
+                            android:gravity="center"
+                            android:id="@+id/HBH_Text_15"
+                            android:textColor="#ffffff"
+                            android:textSize="20dp" />
+                        <FrameLayout
+                            android:layout_width="46dp"
+                            android:layout_height="match_parent"
+                            android:background="#ffffff"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginBottom="2dp">
+
+                            <EditText
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:id="@+id/HBH_EditText_15"
+                                android:gravity="center"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:ems="10"
+                                android:background="#FFFFFF"
+                                android:layout_gravity="center" />
+                        </FrameLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:layout_alignTop="@+id/horizontalScrollViewBack"
+
+                        android:background="#accb3f"
+                        android:layout_marginLeft="4dp"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="16"
+                            android:gravity="center"
+                            android:id="@+id/HBH_Text_16"
+                            android:textColor="#ffffff"
+                            android:textSize="20dp" />
+                        <FrameLayout
+                            android:layout_width="46dp"
+                            android:layout_height="match_parent"
+                            android:background="#ffffff"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginBottom="2dp">
+
+                            <EditText
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:id="@+id/HBH_EditText_16"
+                                android:gravity="center"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:ems="10"
+                                android:background="#FFFFFF"
+                                android:layout_gravity="center" />
+                        </FrameLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:layout_alignTop="@+id/horizontalScrollViewBack"
+
+                        android:background="#accb3f"
+                        android:layout_marginLeft="4dp"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="17"
+                            android:gravity="center"
+                            android:id="@+id/HBH_Text_17"
+                            android:textSize="20dp"
+                            android:textColor="#ffffff" />
+                        <FrameLayout
+                            android:layout_width="46dp"
+                            android:layout_height="match_parent"
+                            android:background="#ffffff"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginBottom="2dp">
+
+                            <EditText
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:id="@+id/HBH_EditText_17"
+                                android:gravity="center"
+                                android:background="#FFFFFF"
+                                android:maxLength="2"
+                                android:inputType="number"
+                                android:ems="10"
+                                android:layout_gravity="center" />
+                        </FrameLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:layout_alignTop="@+id/horizontalScrollViewBack"
+
+                        android:background="#accb3f"
+                        android:layout_marginLeft="4dp"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="18"
+                            android:gravity="center"
+                            android:id="@+id/HBH_Text_18"
+                            android:textColor="#ffffff"
+                            android:textSize="20dp" />
+                        <FrameLayout
+                            android:layout_width="46dp"
+                            android:layout_height="match_parent"
+                            android:background="#ffffff"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginBottom="2dp">
+
+                            <EditText
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:id="@+id/HBH_EditText_18"
+                                android:gravity="center"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:ems="10"
+                                android:background="#FFFFFF"
+                                android:layout_gravity="center" />
+                        </FrameLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:layout_alignTop="@+id/horizontalScrollViewBack"
+
+                        android:background="#accb3f"
+                        android:layout_marginLeft="4dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="In"
+                            android:gravity="center"
+                            android:id="@+id/HBH_Text_outin2"
+                            android:textColor="#ffffff"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:layout_width="46dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/HBH_EditText_outin2"
+                            android:gravity="center"
+                            android:background="#FFFFFF"
+                            android:textSize="20dp"
+                            android:textColor="#10171F"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginBottom="2dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:background="#accb3f"
+                android:weightSum="2"
+                android:id="@+id/HBHlinear1"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/horizontalScrollViewBack"
+                android:layout_alignLeft="@+id/horizontalScrollViewBack"
+                android:layout_alignStart="@+id/horizontalScrollViewBack"
+                android:layout_gravity="center_horizontal"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:text="Final Score :"
+                    android:id="@+id/HBHFinalscore"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:layout_weight="1.15"
+
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="font/Roboto-Regular_0.ttf" />
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/HBHTextFS"
+                    android:layout_weight="0.68"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#10171f"
+                    android:textSize="24dp"
+                    android:layout_marginRight="4dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/HBHlinMorestats"
+                android:layout_below="@+id/HBHlinear1"
+                android:background="#51677E"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="2dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="MORE STATS"
+                    android:id="@+id/HBHtextView31"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="font/Roboto-Regular_0.ttf" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right"
+                    android:layout_marginRight="10dp">
+
+                    <Button
+                        android:layout_width="26dp"
+                        android:layout_height="14dp"
+                        android:id="@+id/HBHbuttonMoresstats"
+                        android:background="@drawable/downarrow"
+                        android:layout_marginLeft="200dp"
+                        android:layout_gravity="center_vertical" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:background="#accb3f"
+                android:weightSum="2"
+                android:layout_marginTop="20dp"
+                android:visibility="gone"
+                android:id="@+id/HBHlinear2"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:text="Total Putts :"
+                    android:id="@+id/HBHtextTP"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:layout_weight="1.15"
+
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="font/Roboto-Regular_0.ttf" />
+
+                <EditText
+                    android:layout_width="123dp"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/HBHeditTextTP"
+                    android:layout_weight="0.68"
+                    android:maxLength="4"
+                    android:gravity="center"
+                    android:background="#ffffff"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="24dp"
+                    android:layout_marginRight="4dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:background="#accb3f"
+                android:weightSum="2"
+                android:layout_marginTop="20dp"
+                android:visibility="gone"
+                android:id="@+id/HBHlinear3"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:text="Fairways Hit :"
+                    android:id="@+id/HBHtextFH"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:layout_weight="1.15"
+
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="font/Roboto-Regular_0.ttf" />
+
+                <EditText
+                    android:layout_width="123dp"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/HBHeditTextFH"
+                    android:gravity="center"
+                    android:layout_weight="0.68"
+                    android:background="#ffffff"
+                    android:maxLength="4"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="24dp"
+                    android:layout_marginRight="4dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:background="#accb3f"
+                android:weightSum="2"
+                android:layout_marginTop="20dp"
+                android:visibility="gone"
+                android:id="@+id/HBHlinear4"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:text="GIR :"
+                    android:id="@+id/HBHtextGIR"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:layout_weight="1.15"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="font/Roboto-Regular_0.ttf" />
+
+                <EditText
+                    android:layout_width="123dp"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/HBHeditTextGIR"
+                    android:gravity="center"
+                    android:layout_weight="0.68"
+                    android:background="#ffffff"
+                    android:maxLength="4"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="24dp"
+                    android:layout_marginRight="4dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/HBHlinLessstats"
+                android:background="#51677E"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="2dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="LESS STATS"
+                    android:id="@+id/HBHtextlessstats"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="font/Roboto-Regular_0.ttf" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:gravity="right">
+
+                    <Button
+                        android:layout_width="26dp"
+                        android:layout_height="14dp"
+                        android:id="@+id/HBHBUTTONLESSSTATS"
+                        android:background="@drawable/uparrow"
+                        android:layout_marginLeft="200dp"
+                        android:layout_gravity="center_vertical" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+    <com.golfnationsmob.GolfModel.MyKeyBoard
+        android:id="@+id/keyboard_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayoutbuttonHBH"
+        android:layout_centerHorizontal="true"
+        android:focusable="true"
+        android:background="@android:color/transparent"
+        android:keyBackground="@color/grey"
+        android:focusableInTouchMode="true"
+        android:visibility="gone"
+        android:keyTextColor="#99b6d6"
+        android:layout_marginLeft="4dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:layout_alignParentBottom="true"
+        android:weightSum="2"
+        android:background="#10171f"
+        android:id="@+id/linearLayoutbuttonHBH"
+        android:visibility="visible">
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="CANCEL"
+            android:background="#10171f"
+            android:textColor="#ffffff"
+            android:id="@+id/HBHCANCEL"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_gravity="left|bottom"
+            android:textAlignment="center"
+            android:layout_marginRight="45dp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="POST SCORE"
+            android:id="@+id/HBHpostscore"
+            android:background="#10171f"
+            android:textColor="#ffffff"
+
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_gravity="left|bottom"
+            android:textAlignment="center"
+            android:layout_marginLeft="60dp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

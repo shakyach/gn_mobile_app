@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#ecedf1"
+        android:id="@+id/addFriendRelativeLO"
+        android:layout_marginTop="2dp">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBoxaddfriend"
+            android:button="@drawable/checkbox_empty1"
+            android:layout_gravity="center_vertical"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stats Unknown"
+            android:id="@+id/addfriendstatus"
+            android:layout_below="@+id/friendname"
+            android:layout_alignLeft="@+id/friendname"
+            android:layout_alignStart="@+id/friendname"
+            android:textColor="#62768b" />
+
+        <TextView
+            android:id="@+id/friendname"
+            android:textColor="#1b2531"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_width="250dp"
+            android:layout_height="26dp"
+            android:layout_gravity="center_vertical"
+            android:text="friend name"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/checkBoxaddfriend"
+            android:layout_toEndOf="@+id/checkBoxaddfriend"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="18dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EDIT"
+            android:id="@+id/addfriendeditbutton"
+            android:background="#ebedf1"
+            android:textSize="14dp"
+            android:layout_gravity="center_vertical"
+            android:layout_alignBottom="@+id/addfriendstatus"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="22dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#637589"
+            android:textStyle="bold"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.golfnationsmob">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.sensor.accelerometer"
+        android:required="true" />
+<uses-feature android:name="android.hardware.camera"
+                  android:required="true" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".GolfView.MainPage"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".GolfView.NewRound.RoundSetting"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".GolfView.NewRound.Scoring"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".GolfView.NewRound.TeeSelection"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".GolfView.NewRound.Profile"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".GolfView.NewRound.SelectCourse"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".GolfView.NewRound.CourseOption"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".GolfView.NewRound.StartRound"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".GolfView.NewRound.Gps.MapsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".GolfView.NewRound.Gps.infoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".GolfView.NewRound.ScoreCard"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="landscape"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".GolfView.NewRound.AddFriends"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".GolfView.NewRound.AddEditFriend"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".GolfView.NewRound.EditFriendInfo"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".GolfView.PostScore.MainPostScore"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".GolfView.PostScore.TotalScore"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".GolfView.PostScore.ScoreHoleByHole"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".GolfView.PracticeGoals.PracticeGoalsMain"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".GolfView.SplashActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GolfView.PracticeGoals.PracGoPutting"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".GolfView.PracticeGoals.PracticeNewSet"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".GolfView.PracticeGoals.PracticeInputText"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".GolfView.NewRound.ShotClubSelection"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".GolfView.NewRound.ShotAccuracy"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".GolfView.NewRound.MyClub"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme" />
+        <activity android:name=".GolfView.NewRound.PuttDistance"
+android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme" ></activity>
+    </application>
+
+</manifest>

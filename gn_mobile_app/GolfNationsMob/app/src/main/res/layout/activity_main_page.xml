@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context=".GolfView.MainPage"
+    android:background="@mipmap/mainbg">
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/relativeLayout"
+        android:layout_marginBottom="80dp"
+        android:visibility="visible">
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="@string/NEWROUND"
+            android:id="@+id/newround"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/mainbutton"
+            android:textColor="#ffffff"
+            android:allowUndo="false" />
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="@string/POSTSCORE"
+            android:id="@+id/postscore"
+            android:layout_below="@+id/newround"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/mainbutton"
+            android:layout_marginTop="4dp"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="@string/HOTDEELSTEETIMES"
+            android:id="@+id/Practice"
+            android:layout_below="@+id/postscore"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/mainbutton"
+            android:layout_marginTop="4dp"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="@string/STATSANALYTIC"
+            android:id="@+id/stanalytic"
+            android:layout_below="@+id/Practice"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/mainbutton"
+            android:layout_marginTop="4dp"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="@string/TOURNAEVENTS"
+            android:id="@+id/tounaeve"
+            android:layout_below="@+id/stanalytic"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/mainbutton"
+            android:layout_marginTop="4dp"
+            android:textColor="#ffffff"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:id="@+id/imageView"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/tounaeve"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/serviceproname"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/drawer_layout"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+
+        <ListView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:id="@+id/lv_sliding_menu"
+            android:choiceMode="singleChoice"
+            android:layout_gravity="right"></ListView>
+
+    </android.support.v4.widget.DrawerLayout>
+
+    <com.google.android.gms.ads.doubleclick.PublisherAdView
+        android:id="@+id/publisherAdView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.doubleclick.PublisherAdView>
+
+</RelativeLayout>

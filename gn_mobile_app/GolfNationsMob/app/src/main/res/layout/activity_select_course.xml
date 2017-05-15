@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.golfnationsmob.GolfView.NewRound.SelectCourse"
+    android:background="#ffffff">
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:text="@string/NEARBY"
+        android:id="@+id/scorecardcourse"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#ebedf1"
+        android:textColor="#10171f"
+        android:layout_marginTop="10dp"
+        android:textSize="14dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:text="@string/RECENT"
+        android:id="@+id/scorecardTalon"
+        android:layout_alignBottom="@+id/scorecardcourse"
+        android:layout_toRightOf="@+id/scorecardcourse"
+        android:layout_toEndOf="@+id/scorecardcourse"
+        android:background="#97b4d4"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="2dp"
+        android:textSize="14dp"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:text="@string/SEARCH"
+        android:id="@+id/idsearch"
+        android:layout_alignBottom="@+id/scorecardTalon"
+        android:layout_toRightOf="@+id/scorecardTalon"
+        android:layout_toEndOf="@+id/scorecardTalon"
+        android:background="#97b4d4"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="2dp"
+        android:textSize="14dp"
+        android:visibility="invisible" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_marginTop="63dp" />
+
+</RelativeLayout>

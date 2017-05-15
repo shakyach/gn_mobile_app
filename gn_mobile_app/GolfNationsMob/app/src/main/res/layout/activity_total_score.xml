@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.golfnationsmob.GolfView.PostScore.TotalScore"
+    android:background="#ffffff">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView6"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:scrollbars="none"
+
+        android:layout_marginBottom="50dp"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linearTotalScore">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="#EBEDF1"
+                android:id="@+id/relativeLayout3">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/TSprofileIm"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/profile_default" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:id="@+id/TSdateid"
+                    android:layout_marginLeft="20dp"
+                    android:layout_alignTop="@+id/TSprofileIm"
+                    android:layout_toRightOf="@+id/TSprofileIm"
+                    android:layout_toEndOf="@+id/TSprofileIm"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#10171f"
+                    android:textSize="14dp"
+                    android:fontFamily="font/Roboto-Regular_0.ttf" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:id="@+id/TScoursename"
+                    android:layout_below="@+id/TSdateid"
+                    android:layout_alignLeft="@+id/TSdateid"
+                    android:layout_alignStart="@+id/TSdateid"
+                    android:textSize="16dp"
+                    android:textColor="#10171f"
+                    android:fontFamily="font/Roboto-Regular_0.ttf" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:background="#accb3f"
+                android:weightSum="2"
+                android:id="@+id/TSlinear1"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:text="Total Score :"
+                    android:id="@+id/textFinalscore"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:layout_weight="1.15"
+
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="font/Roboto-Regular_0.ttf" />
+
+                <EditText
+                    android:layout_width="123dp"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/editTextFS"
+                    android:layout_weight="0.68"
+                    android:maxLength="4"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="4dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/TSlinMorestats"
+                android:background="#51677E"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="2dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="MORE STATS"
+                    android:id="@+id/TStextView31"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="font/Roboto-Regular_0.ttf" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:gravity="right">
+
+                    <Button
+                        android:layout_width="26dp"
+                        android:layout_height="14dp"
+                        android:id="@+id/TSbuttonMoresstats"
+                        android:background="@drawable/downarrow"
+                        android:layout_marginLeft="200dp"
+                        android:layout_gravity="center_vertical" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:background="#accb3f"
+                android:weightSum="2"
+                android:layout_marginTop="20dp"
+                android:visibility="gone"
+                android:id="@+id/TSlinear2"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:text="Total Putts :"
+                    android:id="@+id/textTP"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:layout_weight="1.15"
+
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="font/Roboto-Regular_0.ttf" />
+
+                <EditText
+                    android:layout_width="123dp"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/editTextTP"
+                    android:layout_weight="0.68"
+                    android:maxLength="4"
+                    android:gravity="center"
+                    android:background="#ffffff"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="4dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:background="#accb3f"
+                android:weightSum="2"
+                android:layout_marginTop="20dp"
+                android:visibility="gone"
+                android:id="@+id/TSlinear3"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:text="Fairways Hit :"
+                    android:id="@+id/textFH"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:layout_weight="1.15"
+
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="font/Roboto-Regular_0.ttf" />
+
+                <EditText
+                    android:layout_width="123dp"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/editTextFH"
+                    android:gravity="center"
+                    android:layout_weight="0.68"
+                    android:background="#ffffff"
+                    android:maxLength="4"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="4dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:background="#accb3f"
+                android:weightSum="2"
+                android:layout_marginTop="20dp"
+                android:visibility="gone"
+                android:id="@+id/TSlinear4"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:text="GIR :"
+                    android:id="@+id/textGIR"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:layout_weight="1.15"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="font/Roboto-Regular_0.ttf" />
+
+                <EditText
+                    android:layout_width="123dp"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/editTextGIR"
+                    android:gravity="center"
+                    android:layout_weight="0.68"
+                    android:background="#ffffff"
+                    android:maxLength="4"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="4dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/TSlinLessstats"
+                android:background="#51677E"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="2dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="LESS STATS"
+                    android:id="@+id/TStextlessstats"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="font/Roboto-Regular_0.ttf" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right"
+                    android:layout_marginRight="10dp">
+
+                    <Button
+                        android:layout_width="26dp"
+                        android:layout_height="14dp"
+                        android:id="@+id/TSBUTTONLESSSTATS"
+                        android:background="@drawable/uparrow"
+                        android:layout_marginLeft="200dp"
+                        android:layout_gravity="center_vertical" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:layout_alignParentBottom="true"
+        android:weightSum="2"
+        android:background="#10171f"
+        android:id="@+id/totalsavelinear">
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="CANCEL"
+            android:background="#10171f"
+            android:textColor="#ffffff"
+            android:id="@+id/TSCANCEL"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_gravity="left|bottom"
+            android:textAlignment="center"
+            android:layout_marginRight="45dp"
+            android:fontFamily="font/Roboto-Regular_0.ttf" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="POST SCORE"
+            android:id="@+id/TSsaveButton"
+            android:background="#10171f"
+            android:textColor="#ffffff"
+
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_gravity="left|bottom"
+            android:textAlignment="center"
+            android:layout_marginLeft="60dp"
+            android:fontFamily="font/Roboto-Regular_0.ttf" />
+
+    </LinearLayout>
+
+    <com.golfnationsmob.GolfModel.MyKeyBoard
+        android:id="@+id/keyboard_view1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayoutbuttonHBH"
+        android:layout_centerHorizontal="true"
+        android:focusable="true"
+        android:background="@android:color/transparent"
+        android:keyBackground="@color/grey"
+        android:focusableInTouchMode="true"
+        android:visibility="gone"
+        android:keyTextColor="#99b6d6"
+        android:layout_marginLeft="4dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp" />
+</RelativeLayout>

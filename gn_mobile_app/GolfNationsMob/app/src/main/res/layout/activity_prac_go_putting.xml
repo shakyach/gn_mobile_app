@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.golfnationsmob.GolfView.PracticeGoals.PracGoPutting">
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:text="Practice"
+        android:id="@+id/Bppractice"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#ebedf1"
+        android:textColor="#10171f"
+        android:layout_marginTop="10dp"
+        android:textSize="14dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:text="Goals"
+        android:id="@+id/Bpgoals"
+        android:layout_alignBottom="@+id/Bppractice"
+        android:layout_toRightOf="@+id/Bppractice"
+        android:layout_toEndOf="@+id/Bppractice"
+        android:background="#97b4d4"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="2dp"
+        android:textSize="14dp" />
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:text="Instructions"
+        android:id="@+id/Bpinstruction"
+        android:layout_alignBottom="@+id/Bpgoals"
+        android:layout_toRightOf="@+id/Bpgoals"
+        android:layout_toEndOf="@+id/Bpgoals"
+        android:background="#97b4d4"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="2dp"
+        android:textSize="14dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/Bppractice"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:background="#eeeeee"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PUTTING"
+            android:gravity="center"
+            android:id="@+id/practicename"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textColor="#10171F"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:text="98"
+            android:id="@+id/trackvalue"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:background="@drawable/roundblue"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tracked"
+            android:id="@+id/textView20"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:textColor="#000000"
+            android:textSize="13dp" />
+
+        <TextView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:text="20"
+            android:id="@+id/setvalue"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="15dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/roundblue" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sets"
+            android:id="@+id/textView21"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textColor="#10171f"
+            android:textSize="13dp" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="+ New Set"
+        android:id="@+id/Bnewset"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="120dp"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:background="#6aa84f" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#eeeeee"
+        android:layout_below="@+id/Bnewset"
+        android:id="@+id/resentsets"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:text="15"
+            android:id="@+id/totalview"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/roundblue"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resent Sets"
+            android:id="@+id/textView22"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textColor="#10171f" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_viewputting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_below="@+id/resentsets"
+        android:layout_marginTop="2dp" />
+
+</RelativeLayout>

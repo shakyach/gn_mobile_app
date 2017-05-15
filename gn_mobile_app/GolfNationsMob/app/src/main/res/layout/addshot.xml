@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:id="@+id/shotCustomlinear">
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="1"
+        android:gravity="center"
+        android:id="@+id/textshotcount"
+        android:textColor="#ffffff"
+        android:background="#bcbecb"
+        android:textSize="25dp"
+        android:layout_marginTop="3dp" />
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginLeft="2dp"
+        android:background="#ebedf1"
+        android:layout_marginTop="3dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:layout_alignParentRight="true"
+            android:id="@+id/lin1newshot">
+
+
+
+        <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/buttonshotdelete"
+                android:background="@drawable/minus"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/linearallbutnewshot"
+            android:layout_toStartOf="@id/lin1newshot"
+            android:layout_toLeftOf="@id/lin1newshot"
+            android:layout_marginRight="20dp"
+            android:visibility="visible"
+            android:weightSum="2">
+
+
+        <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#a5a6a8"
+                android:id="@+id/f1">
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:text="Club"
+                android:id="@+id/buttonclubsel"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:textSize="18dp"
+                android:textColor="#a5a6a8"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:fontFamily="font/Roboto-Bold_0.ttf" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:background="#a5a6a8"
+                android:id="@+id/frameendpoint"
+                android:layout_weight="1"
+                android:layout_toEndOf="@id/f1"
+                android:layout_toRightOf="@+id/f1">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/endpointtext1"
+                    android:layout_gravity="left|top"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="#ffffff"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/endpointim"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/shots"
+                    android:layout_marginLeft="8dp"
+                    android:visibility="visible"
+                    android:foregroundGravity="left" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="End\n point"
+                    android:id="@+id/endpointtext2"
+                    android:layout_gravity="center"
+                    android:textColor="#a5a6a8"
+                    android:fontFamily="font/Roboto-Regular_0.ttf"
+                    android:textSize="14dp"
+                    android:gravity="center_horizontal"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="5dp" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:background="#a5a6a8"
+                android:id="@+id/frameaccubutton"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:layout_toEndOf="@id/frameendpoint"
+                android:layout_toRightOf="@+id/frameendpoint">
+
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/aacutext"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="#ffffff" />
+
+                <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Accuracy"
+                android:id="@+id/buttonaccuracyshot"
+                android:layout_weight="1"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:textSize="12dp"
+                android:background="#ffffff"
+                android:layout_marginLeft="2dp"
+                android:textColor="#a5a6a8"
+                android:layout_marginRight="2dp"
+                android:gravity="center"
+                android:visibility="visible"
+                android:layout_gravity="center"
+                    android:fontFamily="font/Roboto-Regular_0.ttf" />
+
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/buttonaccuracyshot1"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp" />
+
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

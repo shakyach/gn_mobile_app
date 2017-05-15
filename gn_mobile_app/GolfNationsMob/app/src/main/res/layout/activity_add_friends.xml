@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.golfnationsmob.GolfView.NewRound.AddFriends"
+    android:background="#ffffff">
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:text="My Friends"
+        android:id="@+id/scorecardcourse"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#ebedf1"
+        android:textColor="#10171f"
+        android:layout_marginTop="10dp"
+        android:textSize="14dp"
+        android:allowUndo="false" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:text="My Club"
+        android:id="@+id/scorecardTalon"
+        android:layout_alignBottom="@+id/scorecardcourse"
+        android:layout_toRightOf="@+id/scorecardcourse"
+        android:layout_toEndOf="@+id/scorecardcourse"
+        android:background="#97b4d4"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="2dp"
+        android:textSize="14dp"
+        android:visibility="gone" />
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:text="Find"
+        android:id="@+id/idfind"
+        android:layout_alignBottom="@+id/scorecardTalon"
+        android:layout_toRightOf="@+id/scorecardTalon"
+        android:layout_toEndOf="@+id/scorecardTalon"
+        android:background="#97b4d4"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="2dp"
+        android:textSize="14dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:layout_alignParentBottom="true"
+        android:weightSum="2"
+        android:background="#10171f">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="+ CREATE NEW"
+            android:id="@+id/idaddnew"
+            android:background="#10171f"
+            android:textColor="#ffffff"
+
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+
+            android:textAlignment="center"
+            android:layout_marginRight="120dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="CONTINUE"
+            android:id="@+id/addfriendContinue"
+            android:layout_alignTop="@+id/idaddnew"
+            android:layout_toRightOf="@+id/idaddnew"
+            android:layout_toEndOf="@+id/idaddnew"
+            android:background="#10171f"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:layout_marginLeft="15dp" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_friend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+
+        android:layout_marginTop="61dp"
+        android:layout_marginBottom="50dp" />
+
+</RelativeLayout>

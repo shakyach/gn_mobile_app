@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.golfnationsmob.GolfView.PracticeGoals.PracticeInputText">
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:text="Practice"
+        android:id="@+id/PITpractice"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#ebedf1"
+        android:textColor="#10171f"
+        android:layout_marginTop="10dp"
+        android:textSize="14dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:text="Goals"
+        android:id="@+id/PITgoals"
+        android:layout_alignBottom="@+id/PITpractice"
+        android:layout_toRightOf="@+id/PITpractice"
+        android:layout_toEndOf="@+id/PITpractice"
+        android:background="#97b4d4"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="2dp"
+        android:textSize="14dp" />
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:text="Instructions"
+        android:id="@+id/PITinstruction"
+        android:layout_alignBottom="@+id/PITgoals"
+        android:layout_toRightOf="@+id/PITgoals"
+        android:layout_toEndOf="@+id/PITgoals"
+        android:background="#97b4d4"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="2dp"
+        android:textSize="14dp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/PITpractice"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp"
+        android:background="#EEEEEE"
+        android:id="@+id/linearLayout11">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ACCURACY FROM 10 FEET"
+            android:id="@+id/textView8"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:textColor="#10171F"
+            android:textSize="16dp" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollViewPracIn"
+        android:layout_below="@+id/linearLayout11"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="50dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearPracIn">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="49dp"
+        android:layout_below="@+id/linearLayout11"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout13">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I placed"
+            android:id="@+id/accuracyText1"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:textColor="#10171f"
+            android:textSize="25dp" />
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:ems="10"
+            android:gravity="center"
+            android:id="@+id/practiceINeditText1"
+            android:layout_marginLeft="12dp"
+            android:maxLength="4"
+
+            android:background="@drawable/square2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="of"
+            android:id="@+id/textView23"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:textColor="#10171f"
+            android:textSize="25dp" />
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:ems="10"
+            android:gravity="center"
+            android:maxLength="4"
+
+            android:id="@+id/practiceINeditText2"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/square2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/linearLayout13"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/practiceInLinear1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="within"
+            android:id="@+id/textView25"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:textColor="#10171f"
+            android:textSize="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6"
+            android:id="@+id/practiceInfeet"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:textColor="#10171f"
+            android:textSize="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="feet including"
+            android:id="@+id/textView26"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:textColor="#10171f"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/practiceInLinear1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/practiceInLinear2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="the putts I made"
+            android:id="@+id/practiceIntext2"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:textColor="#10171f"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/practiceInLinear2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="35dp"
+        android:id="@+id/practiceInLinear3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I drained"
+            android:id="@+id/textView27"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:textColor="#10171f"
+            android:textSize="25dp" />
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/practiceINeditText3"
+            android:gravity="center"
+            android:maxLength="4"
+
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/square2" />
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+    <com.golfnationsmob.GolfModel.MyKeyBoard
+        android:id="@+id/keyboard_view1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linear44444"
+        android:layout_centerHorizontal="true"
+        android:focusable="true"
+        android:background="@android:color/transparent"
+        android:keyBackground="@color/grey"
+        android:focusableInTouchMode="true"
+        android:visibility="gone"
+        android:keyTextColor="#99b6d6"
+        android:layout_marginLeft="4dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:weightSum="2"
+        android:background="#10171f"
+        android:id="@+id/linear44444">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="CANCEL"
+            android:id="@+id/practiceIncancel"
+            android:background="#10171f"
+            android:textColor="#ffffff"
+
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:layout_marginRight="100dp"
+            android:fontFamily="font/Roboto-Regular_0.ttf" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="SAVE"
+            android:id="@+id/practiceInsave"
+            android:layout_alignTop="@+id/d2"
+            android:layout_toRightOf="@+id/d2"
+            android:layout_toEndOf="@+id/d2"
+            android:background="#10171f"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="font/Roboto-Regular_0.ttf" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   tools:context="com.golfnationsmob.GolfView.NewRound.PuttDistance"
+    android:background="#ffffff">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView8"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="55dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#ebedf1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FEET (APPROXIMATE)"
+                    android:id="@+id/textView43"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#10171F"
+                    android:textSize="14dp"
+                    android:fontFamily="font/Roboto-Regular_0.ttf" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_below="@+id/linearLayout2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:weightSum="4"
+                android:id="@+id/pdlin0"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="2"
+                    android:layout_weight="1"
+                    android:id="@+id/pdnum0"
+                    android:textSize="25dp"
+                    android:background="@drawable/square2" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="4"
+                    android:layout_weight="1"
+
+                    android:id="@+id/pdnum1"
+                    android:textSize="25dp"
+                    android:background="@drawable/square2"
+                    android:layout_marginLeft="15dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="6"
+                    android:layout_weight="1"
+                    android:background="@drawable/square2"
+
+                    android:id="@+id/pdnum2"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="15dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="8"
+                    android:id="@+id/pdnum3"
+                    android:background="@drawable/square2"
+
+                    android:layout_weight="1"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_below="@+id/pdlin0"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/pdlin1"
+
+                android:weightSum="4"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="10"
+                    android:layout_weight="1"
+                    android:background="@drawable/square2"
+
+                    android:id="@+id/pdnum4"
+                    android:textSize="25dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="15"
+                    android:layout_weight="1"
+                    android:background="@drawable/square2"
+
+                    android:id="@+id/pdnum5"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="15dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="20"
+                    android:layout_weight="1"
+                    android:background="@drawable/square2"
+
+                    android:id="@+id/pdnum6"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="15dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="25"
+                    android:background="@drawable/square2"
+
+                    android:id="@+id/pdnum7"
+                    android:layout_weight="1"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="15dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:id="@+id/pdlin2"
+                android:layout_below="@+id/pdlin1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:weightSum="4"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="30"
+                    android:layout_weight="1"
+                    android:background="@drawable/square2"
+
+                    android:id="@+id/pdnum8"
+                    android:textSize="25dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="40"
+                    android:layout_weight="1"
+                    android:background="@drawable/square2"
+
+                    android:id="@+id/pdnum9"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="15dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="50"
+                    android:layout_weight="1"
+                    android:background="@drawable/square2"
+
+                    android:id="@+id/pdnum10"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="15dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="60"
+                    android:background="@drawable/square2"
+
+                    android:id="@+id/pdnum11"
+                    android:layout_weight="1"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:background="#ebedf1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OTHER"
+                    android:id="@+id/textView44"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#10171F"
+                    android:textSize="14dp"
+                    android:fontFamily="font/Roboto-Regular_0.ttf" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:weightSum="2">
+
+                <NumberPicker
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pdnumberPicker3"
+                    android:theme="@style/AppTheme.Picker"
+                    android:descendantFocusability="blocksDescendants"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_weight="1" />
+
+                <NumberPicker
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pdnumberPicker4"
+                    android:theme="@style/AppTheme.Picker"
+                    android:descendantFocusability="blocksDescendants"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/pdnumberPicker3"
+                    android:layout_toStartOf="@+id/pdnumberPicker3"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:weightSum="2"
+        android:background="#10171f"
+        android:id="@+id/LINEARPD">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="CANCEL"
+            android:background="#10171f"
+            android:textColor="#ffffff"
+            android:id="@+id/PDcancel"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:layout_marginRight="120dp"
+            android:fontFamily="font/Roboto-Regular_0.ttf" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="SAVE"
+            android:id="@+id/PDSave"
+            android:layout_alignTop="@+id/idmyclub"
+            android:layout_toRightOf="@+id/idmyclub"
+            android:layout_toEndOf="@+id/idmyclub"
+            android:background="#10171f"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="font/Roboto-Regular_0.ttf" />
+    </LinearLayout>
+</RelativeLayout>

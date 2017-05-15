@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".GolfView.MainPage"
+    android:background="#ffffff"
+    android:focusable="false">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView4"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/linear44444"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/TEXTCOURSE"
+                android:id="@+id/coursttext"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="6dp"
+                android:textColor="#1a2531"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="#EBEDF1"
+                android:id="@+id/linearLayoutcourseselect"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="220dp"
+                    android:layout_height="45dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="McDowell Mountain Ranch"
+                    android:id="@+id/nearestcourse"
+                    android:layout_marginTop="22dp"
+                    android:textColor="#10171f"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="20dp" />
+
+                <Button
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:id="@+id/refresh"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/refesh_504"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:id="@+id/courselinear"
+                    android:gravity="right"
+                    android:layout_marginRight="10dp">
+
+                    <Button
+                        android:layout_width="14dp"
+                        android:layout_height="22dp"
+                        android:id="@+id/courseselect"
+                        android:background="@drawable/rightarrow"
+                        android:visibility="visible"
+
+                        android:layout_gravity="center|right" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/TEXTSCORING"
+                android:id="@+id/scoreid"
+                android:layout_below="@+id/linearLayoutcourseselect"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="20dp"
+                android:textColor="#1a2531"
+                android:layout_marginLeft="6dp"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_below="@+id/scoreid"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="#EBEDF1"
+                android:id="@+id/linearLayoutscoringselect">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/TEXTSCORETYPE"
+                    android:id="@+id/scoringText"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="22dp"
+                    android:textColor="#10171f"
+                    android:textSize="17dp" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/scorelinear"
+                    android:gravity="right"
+                    android:layout_marginRight="10dp">
+
+                    <Button
+                        android:layout_width="14dp"
+                        android:layout_height="22dp"
+                        android:id="@+id/scoreselect"
+                        android:background="@drawable/rightarrow"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/GOLFERS"
+                android:id="@+id/idgolfer"
+                android:layout_below="@+id/linearLayoutscoringselect"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="20dp"
+                android:textColor="#1a2531"
+                android:layout_marginLeft="6dp"
+                android:textSize="15dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_below="@+id/idgolfer"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="6dp"
+                android:background="#EBEDF1"
+                android:id="@+id/relativeLayoutteesselect0"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/UserpropicPS"
+                    android:background="@drawable/profile_default"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="22dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/YOU"
+                    android:id="@+id/Youid0"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/UserpropicPS"
+                    android:layout_toEndOf="@+id/UserpropicPS"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="23dp"
+                    android:textColor="#10171f"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/HANDICAP"
+                    android:id="@+id/idhandicap0"
+                    android:layout_below="@+id/Youid0"
+                    android:layout_alignLeft="@+id/Youid0"
+                    android:layout_alignStart="@+id/Youid0"
+                    android:textColor="#62768b"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="78dp"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/NOTEESSEL"
+                    android:id="@+id/teesSelected"
+                    android:layout_alignTop="@+id/Youid0"
+                    android:layout_toRightOf="@+id/idhandicap0"
+                    android:layout_toLeftOf="@+id/teeslinear"
+                    android:layout_toEndOf="@+id/idhandicap0"
+                    android:textColor="#62768b"
+                    android:textSize="16dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_alignParentRight="false"
+                    android:layout_marginLeft="40dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="5"
+                    android:id="@+id/idhandicapvalue0"
+                    android:textColor="#62768b"
+                    android:textSize="16dp"
+                    android:layout_alignTop="@+id/idhandicap0"
+                    android:layout_toRightOf="@+id/idhandicap0"
+                    android:layout_toEndOf="@+id/idhandicap0"
+                    android:layout_marginLeft="1dp" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_alignParentRight="false"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/teeslinear"
+                    android:layout_marginTop="5dp"
+                    android:gravity="right"
+                    android:layout_toEndOf="@+id/teesSelected"
+                    android:layout_toRightOf="@+id/teesSelected"
+                    android:layout_marginRight="10dp">
+
+                    <Button
+                        android:layout_width="14dp"
+                        android:layout_height="22dp"
+                        android:id="@+id/selecttees"
+                        android:layout_alignTop="@+id/UserpropicPS"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/rightarrow"
+                        android:clickable="false"
+                        android:contextClickable="false"
+                        android:gravity="right"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_below="@+id/idgolfer"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="6dp"
+                android:background="#EBEDF1"
+                android:id="@+id/relativeLayoutteesselect1"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/idprofilepicED"
+                    android:background="@drawable/profile_pick3"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/YOU"
+                    android:id="@+id/Youid1"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/idprofilepicED"
+                    android:layout_toEndOf="@+id/idprofilepicED"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="23dp"
+                    android:textColor="#10171f"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/HANDICAP"
+                    android:id="@+id/idhandicap1"
+                    android:layout_below="@+id/Youid1"
+                    android:layout_alignLeft="@+id/Youid1"
+                    android:layout_alignStart="@+id/Youid1"
+                    android:textColor="#62768b"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="78dp"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/NOTEESSEL"
+                    android:id="@+id/teesSelected1"
+                    android:layout_alignTop="@+id/Youid1"
+                    android:layout_toRightOf="@+id/idhandicap1"
+                    android:layout_toLeftOf="@+id/teeslinear1"
+                    android:layout_toEndOf="@+id/idhandicap1"
+                    android:textColor="#62768b"
+                    android:textSize="16dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_alignParentRight="false"
+                    android:layout_marginLeft="40dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="5"
+                    android:id="@+id/idhandicapvalue1"
+                    android:textColor="#62768b"
+                    android:textSize="16dp"
+                    android:layout_alignTop="@+id/idhandicap1"
+                    android:layout_toRightOf="@+id/idhandicap1"
+                    android:layout_toEndOf="@+id/idhandicap1"
+                    android:layout_marginLeft="1dp" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+
+                    android:id="@+id/teeslinear1"
+                    android:visibility="visible"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="right"
+                    android:layout_marginRight="10dp">
+
+                    <Button
+                        android:layout_width="14dp"
+                        android:layout_height="22dp"
+                        android:id="@+id/selecttees1"
+                        android:layout_alignTop="@+id/idprofilepicED"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/rightarrow"
+                        android:clickable="false"
+                        android:contextClickable="false"
+                        android:gravity="right"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_below="@+id/idgolfer"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="6dp"
+                android:background="#EBEDF1"
+                android:id="@+id/relativeLayoutteesselect2"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/User3propic"
+                    android:background="@drawable/profile_pick2"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/YOU"
+                    android:id="@+id/Youid2"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/User3propic"
+                    android:layout_toEndOf="@+id/User3propic"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="23dp"
+                    android:textColor="#10171f"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/HANDICAP"
+                    android:id="@+id/idhandicap2"
+                    android:layout_below="@+id/Youid2"
+                    android:layout_alignLeft="@+id/Youid2"
+                    android:layout_alignStart="@+id/Youid2"
+                    android:textColor="#62768b"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="78dp"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/NOTEESSEL"
+                    android:id="@+id/teesSelected2"
+                    android:layout_alignTop="@+id/Youid2"
+                    android:layout_toRightOf="@+id/idhandicap2"
+                    android:layout_toLeftOf="@+id/teeslinear2"
+                    android:layout_toEndOf="@+id/idhandicap2"
+                    android:textColor="#62768b"
+                    android:textSize="16dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_alignParentRight="false"
+                    android:layout_marginLeft="40dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="5"
+                    android:id="@+id/idhandicapvalue2"
+                    android:textColor="#62768b"
+                    android:textSize="16dp"
+                    android:layout_alignTop="@+id/idhandicap2"
+                    android:layout_toRightOf="@+id/idhandicap2"
+                    android:layout_toEndOf="@+id/idhandicap2"
+                    android:layout_marginLeft="1dp" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/teeslinear2"
+                    android:layout_marginTop="5dp"
+                    android:visibility="visible"
+                    android:gravity="right"
+                    android:layout_marginRight="10dp">
+
+                    <Button
+                        android:layout_width="14dp"
+                        android:layout_height="22dp"
+                        android:id="@+id/selecttees2"
+                        android:layout_alignTop="@+id/User3propic"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/rightarrow"
+                        android:clickable="false"
+                        android:contextClickable="false"
+                        android:gravity="right"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_below="@+id/idgolfer"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="6dp"
+                android:background="#EBEDF1"
+                android:id="@+id/relativeLayoutteesselect3"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/User4propic"
+                    android:background="@drawable/profile_pick1"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/YOU"
+                    android:id="@+id/Youid3"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/User4propic"
+                    android:layout_toEndOf="@+id/User4propic"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="23dp"
+                    android:textColor="#10171f"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/HANDICAP"
+                    android:id="@+id/idhandicap3"
+                    android:layout_below="@+id/Youid3"
+                    android:layout_alignLeft="@+id/Youid3"
+                    android:layout_alignStart="@+id/Youid3"
+                    android:textColor="#62768b"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="78dp"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/NOTEESSEL"
+                    android:id="@+id/teesSelected3"
+                    android:layout_alignTop="@+id/Youid3"
+                    android:layout_toRightOf="@+id/idhandicap3"
+                    android:layout_toLeftOf="@+id/teeslinear3"
+                    android:layout_toEndOf="@+id/idhandicap3"
+                    android:textColor="#62768b"
+                    android:textSize="16dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_alignParentRight="false"
+                    android:layout_marginLeft="40dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="5"
+                    android:id="@+id/idhandicapvalue3"
+                    android:textColor="#62768b"
+                    android:textSize="16dp"
+                    android:layout_alignTop="@+id/idhandicap3"
+                    android:layout_toRightOf="@+id/idhandicap3"
+                    android:layout_toEndOf="@+id/idhandicap3"
+                    android:layout_marginLeft="1dp" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/teeslinear3"
+                    android:layout_marginTop="5dp"
+                    android:visibility="visible"
+                    android:gravity="right"
+                    android:layout_marginRight="10dp">
+
+                    <Button
+                        android:layout_width="14dp"
+                        android:layout_height="22dp"
+                        android:id="@+id/selecttees3"
+                        android:layout_alignTop="@+id/User4propic"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/rightarrow"
+                        android:clickable="false"
+                        android:contextClickable="false"
+                        android:gravity="right"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="+ ADD GOLFERS"
+                android:id="@+id/b1"
+                android:layout_below="@+id/relativeLayoutteesselect0"
+
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="#accc3f"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="OPEN EVENTS"
+                android:id="@+id/openevents"
+                android:layout_below="@+id/b1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="12dp"
+                android:textColor="#1a2531"
+                android:layout_marginLeft="6dp"
+                android:textSize="15dp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_below="@+id/openevents"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="#EBEDF1"
+                android:id="@+id/frontraptorLayout"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:id="@+id/imageView8"
+                    android:background="@drawable/selectevent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Select..."
+                    android:id="@+id/idselect"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="16dp"
+                    android:textColor="#10171f"
+                    android:textSize="16dp" />
+
+                <Button
+                    android:layout_width="14dp"
+                    android:layout_height="22dp"
+                    android:id="@+id/eventselect"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/rightarrow"
+                    android:layout_marginLeft="30dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:weightSum="2"
+        android:background="#10171f"
+        android:id="@+id/linear44444">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="CANCEL"
+            android:id="@+id/d2"
+            android:background="#10171f"
+            android:textColor="#ffffff"
+
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:layout_marginRight="100dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="START ROUND"
+            android:id="@+id/idstart"
+            android:layout_alignTop="@+id/d2"
+            android:layout_toRightOf="@+id/d2"
+            android:layout_toEndOf="@+id/d2"
+            android:background="#10171f"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:layout_marginLeft="15dp" />
+    </LinearLayout>
+
+</RelativeLayout>

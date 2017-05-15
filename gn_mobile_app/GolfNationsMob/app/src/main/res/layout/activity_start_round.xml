@@ -1,0 +1,1292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.golfnationsmob.GolfView.NewRound.StartRound"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#10171f"
+        android:id="@+id/linearLayout15">
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:id="@+id/leftarrow"
+            android:background="@drawable/leftnav"
+            android:layout_weight=".15" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:text="1"
+                android:id="@+id/holeNumber"
+                android:layout_gravity="left|center_vertical"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="50dp"
+                android:textStyle="bold"
+                android:background="#accb3f"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:layout_width="34dp"
+                android:layout_height="15dp"
+                android:text="PAR"
+                android:id="@+id/textView4"
+                android:layout_gravity="top|left|center"
+                android:gravity="center"
+                android:layout_marginLeft="66dp"
+                android:background="#3b4c60"
+                android:textColor="#9ab4d5"
+
+                android:textAlignment="center"
+                android:textSize="10dp" />
+
+            <TextView
+                android:layout_width="34dp"
+                android:layout_height="wrap_content"
+                android:text="4"
+                android:id="@+id/parvaluestart"
+                android:gravity="center"
+                android:layout_gravity="right|bottom"
+                android:background="#3b4c60"
+
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:paddingBottom="2dp"
+                android:textAlignment="center"
+                android:layout_below="@+id/textView4"
+                android:layout_alignLeft="@+id/textView4"
+                android:layout_alignStart="@+id/textView4" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:layout_weight=".45">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:text="360"
+                android:id="@+id/distprev"
+                android:textSize="18dp"
+                android:textColor="#9ab4d5"
+                android:layout_weight=".30"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="370"
+                android:id="@+id/discurrent"
+                android:textSize="30dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:layout_weight=".35"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_gravity="center_vertical" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:text="389"
+                android:id="@+id/distnext"
+                android:textSize="18dp"
+                android:textColor="#9ab4d5"
+                android:layout_weight=".30"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:id="@+id/rightarrow"
+            android:layout_marginLeft="0dp"
+            android:background="@drawable/rightnav"
+            android:layout_weight=".15" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:layout_below="@+id/linearLayout15"
+        android:layout_alignLeft="@+id/linearLayout15"
+        android:layout_alignStart="@+id/linearLayout15"
+        android:weightSum="4"
+        android:id="@+id/linearLayout16">
+
+        <FrameLayout
+            android:layout_width="150dp"
+            android:layout_height="95dp"
+            android:layout_weight="1"
+            android:background="#1b2531"
+            android:id="@+id/FL_profpic1"
+            android:layout_marginRight="1dp">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/id_profile11"
+                android:layout_gravity="left|top"
+                android:background="#ffffff" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/id_profile1"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginTop="13dp" />
+
+            <TextView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:text="+2"
+                android:id="@+id/circlesmall1"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/roundgreen"
+                android:textColor="#ffffff"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You"
+                android:id="@+id/profileText1"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="5dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:fontFamily="font/Roboto-Thin_0.ttf" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="150dp"
+            android:layout_height="95dp"
+            android:layout_weight="1"
+            android:background="#1b2531"
+            android:visibility="visible"
+            android:id="@+id/FL_profpic2"
+            android:layout_marginRight="1dp">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/id_profile22"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/id_profile2"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginTop="13dp" />
+
+            <TextView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:text="+2"
+                android:id="@+id/circlesmall2"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/roundgreen"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textAlignment="center"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/profileText2"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_horizontal"
+                android:textAlignment="center"
+                android:textColor="#9ab4d5" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="150dp"
+            android:layout_height="95dp"
+            android:layout_weight="1"
+            android:background="#1b2531"
+            android:id="@+id/FL_profpic3"
+            android:layout_marginRight="1dp">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/id_profile33"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/id_profile3"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginTop="13dp" />
+
+            <TextView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:text="E"
+                android:id="@+id/circlesmall3"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/roundblue"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/profileText3"
+                android:layout_gravity="center_horizontal|bottom"
+                android:textColor="#9ab4d5"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="5dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="150dp"
+            android:layout_height="95dp"
+            android:layout_weight="1"
+            android:background="#1b2531"
+            android:id="@+id/FL_profpic4">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/id_profile44"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/id_profile4"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginTop="13dp" />
+
+            <TextView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:text="-1"
+                android:id="@+id/circlesmall4"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/roundorange"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/profileText4"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_horizontal"
+                android:textAlignment="center"
+                android:textColor="#9ab4d5" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbarStyle="insideInset"
+        android:fadeScrollbars="true"
+        android:scrollbarSize="0dp"
+        android:fitsSystemWindows="true"
+        android:scrollbars="none"
+        android:layout_below="@+id/linearLayout16"
+        android:background="#FFFFFF"
+
+        android:layout_marginBottom="60dp"
+        android:id="@+id/scrollViewscore"
+        android:visibility="visible">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FFFFFF"  >
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:textColor="#000000"
+                android:id="@+id/idscore"
+                android:text="SCORE"
+                android:textSize="14dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="12dp" />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:id="@+id/FrameLayout1"
+                android:layout_height="80dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#ecedf1"
+                    android:id="@+id/horizentalpicker1"></LinearLayout>
+
+                <ImageView
+                    android:layout_width="66dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:background="#ffffff" />
+
+                <com.golfnationsmob.GolfModel.HorizontalPicker
+                    android:id="@+id/picker"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:textColor="#b4beca"
+                    android:textSize="35dp"
+                    android:paddingTop="16dp"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="2"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    app:values="@array/values1"
+                    app:dividerSize="10dp"
+                    android:layout_alignBottom="@+id/scrollViewscore"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="7dp"
+                    android:paddingBottom="16dp" />
+
+
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/button16"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:background="@drawable/selector1"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/linlessstats"
+                android:background="#51677E"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="MORE STATS"
+                    android:id="@+id/textView31"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="15dp"
+                    android:layout_gravity="center_vertical" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right"
+                    android:layout_marginRight="10dp">
+
+                    <Button
+                        android:layout_width="26dp"
+                        android:layout_height="14dp"
+                        android:id="@+id/buttonlaessstats"
+                        android:background="@drawable/downarrow"
+                        android:layout_marginLeft="200dp"
+                        android:layout_gravity="center_vertical" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:textColor="#000000"
+                android:id="@+id/idputts"
+                android:text="PUTTS"
+                android:textSize="14dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/FrameLayout1"
+                android:visibility="gone"
+                android:layout_marginLeft="12dp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:id="@+id/FrameLayout2"
+                android:layout_height="80dp"
+                android:visibility="gone"
+                >
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#ecedf1"
+                    android:id="@+id/horizentalpicker2"></LinearLayout>
+
+                <ImageView
+                    android:layout_width="66dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:background="#ffffff" />
+                <com.golfnationsmob.GolfModel.HorizontalPicker
+                    android:id="@+id/picker1"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:textColor="#b4beca"
+                    android:textSize="35dp"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="2"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    app:values="@array/values2"
+                    app:dividerSize="10dp"
+                    android:layout_alignBottom="@+id/scrollViewscore"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="7dp" />
+
+
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/button17"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:background="@drawable/selector1"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:textColor="#000000"
+                android:id="@+id/idofthetee"
+                android:text="OFF THE TEE"
+                android:textSize="14dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:layout_marginLeft="12dp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:id="@+id/FrameLayout3"
+                android:layout_height="80dp"
+                android:visibility="gone">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#ecedf1"
+                    android:id="@+id/horizentalpicker3"></LinearLayout>
+
+                <ImageView
+                    android:layout_width="66dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:background="#ffffff" />
+                <com.golfnationsmob.GolfModel.HorizontalPicker
+                    android:id="@+id/picker2"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:textColor="#b4beca"
+                    android:textSize="35dp"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="2"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    app:values="@array/values_off_the_tee"
+                    app:dividerSize="10dp"
+                    android:layout_alignBottom="@+id/scrollViewscore"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="7dp" />
+
+
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/button18"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:background="@drawable/selector1"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp" />
+            </FrameLayout>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:textColor="#000000"
+                android:id="@+id/idteeaccuracy"
+                android:text="TEE ACCURACY"
+                android:textSize="14dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:layout_marginLeft="12dp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:id="@+id/FrameLayout4"
+                android:layout_height="80dp"
+                android:visibility="gone">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#ecedf1"
+                    android:id="@+id/horizentalpicker4"></LinearLayout>
+
+                <ImageView
+                    android:layout_width="66dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:background="#ffffff" />
+                <com.golfnationsmob.GolfModel.HorizontalPicker
+                    android:id="@+id/picker3"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:textColor="#b4beca"
+                    android:textSize="35dp"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="2"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    app:values="@array/values3"
+                    app:dividerSize="10dp"
+                    android:layout_alignBottom="@+id/scrollViewscore"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="7dp" />
+
+
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/button19"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:background="@drawable/selector1"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp" />
+            </FrameLayout>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:textColor="#000000"
+                android:id="@+id/idsand"
+                android:text="BUNKER"
+                android:textSize="14dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:layout_marginLeft="12dp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:id="@+id/FrameLayout5"
+                android:layout_height="80dp"
+                android:visibility="gone">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#ecedf1"
+                    android:id="@+id/horizentalpicker5"></LinearLayout>
+
+                <ImageView
+                    android:layout_width="66dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:background="#ffffff" />
+                <com.golfnationsmob.GolfModel.HorizontalPicker
+                    android:id="@+id/picker4"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:textColor="#b4beca"
+                    android:textSize="35dp"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="2"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    app:values="@array/values2"
+                    app:dividerSize="10dp"
+                    android:layout_alignBottom="@+id/scrollViewscore"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="7dp" />
+
+
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/button20"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:background="@drawable/selector1"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:textColor="#000000"
+                android:id="@+id/idpenalties"
+                android:text="PENALTIES"
+                android:textSize="14dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:layout_marginLeft="12dp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:id="@+id/FrameLayout6"
+                android:layout_height="80dp"
+                android:visibility="gone">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#ecedf1"
+                    android:id="@+id/horizentalpicker6"></LinearLayout>
+
+                <ImageView
+                    android:layout_width="66dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:background="#ffffff" />
+                <com.golfnationsmob.GolfModel.HorizontalPicker
+                    android:id="@+id/picker5"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:textColor="#b4beca"
+                    android:textSize="35dp"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="2"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    app:values="@array/values2"
+                    app:dividerSize="10dp"
+                    android:layout_alignBottom="@+id/scrollViewscore"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="7dp" />
+
+
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/button21"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:background="@drawable/selector1"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp" />
+            </FrameLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/linearmorestats"
+                android:background="#51677E"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="2dp"
+                android:visibility="invisible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="LESS STATS"
+                    android:id="@+id/textmorestats"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="15dp"
+                    android:layout_gravity="center_vertical" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right"
+                    android:layout_marginRight="10dp">
+
+                    <Button
+                        android:layout_width="26dp"
+                        android:layout_height="14dp"
+                        android:id="@+id/BUTTONMORESTATS"
+                        android:background="@drawable/uparrow"
+                        android:layout_marginLeft="200dp"
+                        android:layout_gravity="center_vertical" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="3"
+        android:id="@+id/linearLayout17">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:background="#51677e"
+            android:layout_weight="1"
+            android:id="@+id/LINEARSCORESCOREPOSTING">
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="20dp"
+                android:id="@+id/User3propic"
+                android:background="@drawable/scoreselected"
+                android:layout_gravity="center"
+                android:layout_marginLeft="22dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SCORE"
+                android:id="@+id/IDSCORESCOREPOSTING"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:background="#10171F"
+            android:layout_weight="1"
+            android:id="@+id/LINEARSHOTSSCOREPOSTING">
+
+            <ImageView
+                android:layout_width="19dp"
+                android:layout_height="20dp"
+                android:id="@+id/User4propic"
+                android:background="@drawable/shots"
+                android:layout_marginLeft="15dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SHOTS"
+                android:id="@+id/IDSHOTSSCOREPOSTING"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:background="#10171F"
+            android:layout_weight="1"
+            android:id="@+id/LINEARGPSSCOREPOSTING">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="20dp"
+                android:id="@+id/imageView6"
+                android:background="@drawable/gps"
+                android:layout_marginLeft="26dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GPS"
+                android:id="@+id/IDGPSSCOREPOSTING"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:textSize="15dp"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollViewShots"
+            android:layout_below="@+id/linearLayout16"
+            android:layout_toRightOf="@+id/scrollViewscore"
+            android:layout_toEndOf="@+id/scrollViewscore"
+            android:layout_above="@+id/linearLayout17"
+            android:scrollbars="none"
+
+            android:visibility="visible"
+
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/linearscrollshot">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Shot Tracker"
+                    android:id="@+id/shotTrakerText"
+                    android:textColor="#10171f"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="font/Roboto-Regular_0.ttf" />
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="#51677e"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/relativeLayoutforblueteesON"
+                    android:layout_marginTop="10dp"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(ESTIMATED LOCATION)"
+                        android:id="@+id/textestiamteLoc"
+                        android:layout_below="@+id/textbluetees"
+                        android:layout_alignLeft="@+id/textbluetees"
+                        android:layout_alignStart="@+id/textbluetees"
+                        android:gravity="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Blue Tees"
+                        android:id="@+id/textbluetees"
+                        android:gravity="center"
+                        android:textColor="#ffffff"
+                        android:fontFamily="fonts/Roboto-Bold.ttf"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="15dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PLOT EXACT"
+                        android:gravity="center"
+                        android:id="@+id/textView30"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/textestiamteLoc"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12dp"
+                        android:layout_marginTop="13dp"
+                        android:layout_toLeftOf="@+id/buttonshottrack"
+                        android:layout_toStartOf="@+id/buttonshottrack"
+                        android:layout_marginRight="15dp"
+                        android:fontFamily="font/Roboto-Regular_0.ttf" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TEE LOCATION"
+                        android:id="@+id/textView32"
+                        android:gravity="center"
+                        android:layout_below="@+id/textView30"
+                        android:layout_alignLeft="@+id/textView30"
+                        android:layout_alignStart="@+id/textView30"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12dp"
+                        android:fontFamily="font/Roboto-Regular_0.ttf" />
+
+                    <Button
+                        android:layout_width="59dp"
+                        android:layout_height="56dp"
+                        android:id="@+id/buttonshottrack"
+                        android:background="@drawable/shot_icon"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="2dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    android:id="@+id/relativeLayoutforblueteesOFF">
+
+                    <FrameLayout
+                        android:layout_width="59dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:background="#829d24"
+                        android:id="@+id/frameshottraker">
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:id="@+id/imageView10"
+                            android:layout_gravity="center"
+                            android:background="@drawable/shotsselected" />
+                    </FrameLayout>
+
+                    <RelativeLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/frameshottraker"
+                        android:layout_toEndOf="@+id/frameshottraker"
+                        android:id="@+id/rellayoutshottrack"
+                        android:layout_marginLeft="2dp"
+                        android:background="#accc3f"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Plotted Tee"
+                            android:id="@+id/textView28"
+                            android:layout_weight="0.31"
+                            android:layout_marginTop="10dp"
+                            android:textColor="#ffffff"
+                            android:textSize="20dp"
+                            android:fontFamily="font/Roboto-Bold_0.ttf"
+                            android:layout_marginLeft="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="(Exact Location)"
+                            android:id="@+id/textExactloc"
+                            android:textColor="#ffffff"
+                            android:textSize="12dp"
+                            android:layout_below="@+id/textView28"
+                            android:layout_alignLeft="@+id/textView28"
+                            android:layout_alignStart="@+id/textView28"
+                            android:fontFamily="font/Roboto-Regular_0.ttf" />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/relativeLayoutforblueteesON"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="50dp"
+                    android:weightSum="2">
+
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:text="+ NEW SHOT"
+                        android:id="@+id/buttonnewshot"
+                        android:background="#6f8aa5"
+                        android:textColor="#FFFFFF"
+                        android:layout_weight="1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="60dp"
+                        android:fontFamily="font/Roboto-Regular_0.ttf" />
+
+                    <Button
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:text="+ PUTT"
+                        android:id="@+id/buttonSTputt"
+                        android:layout_weight="1"
+
+                        android:textColor="#FFFFFF"
+                        android:background="#6f8aa5"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="60dp"
+                        android:fontFamily="font/Roboto-Regular_0.ttf" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_below="@+id/buttonnewshot"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="20dp"
+                    android:weightSum="1"
+                    android:layout_weight="3"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:text="0"
+                        android:gravity="center"
+                        android:id="@+id/textshotfinalscore"
+                        android:textColor="#10171f"
+                        android:textSize="20dp"
+                        android:background="@drawable/square2dark"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:text="FINAL SCORE"
+                        android:gravity="center"
+                        android:textColor="#ffffff"
+                        android:textSize="16dp"
+                        android:id="@+id/textView34"
+                        android:background="#10171F"
+                        android:layout_weight="1"
+                        android:layout_gravity="bottom" />
+
+                    <FrameLayout
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/rectempty"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/imageView7"
+                            android:layout_gravity="left|center_vertical"
+                            android:background="@drawable/shots"
+                            android:layout_marginLeft="12dp" />
+
+                        <Button
+                            android:layout_width="60dp"
+                            android:layout_height="40dp"
+                            android:text="SHOT TRACKER"
+                            android:id="@+id/buttonshottracker"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="12dp"
+                            android:background="#FFFFFF"
+                            android:textSize="12dp" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_below="@+id/linearLayout16"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:background="#EBEDF1"
+        android:id="@+id/SRrelativeLayoutteesselect"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/SRuserImage"
+            android:background="@drawable/profile_pick4"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/YOU"
+            android:id="@+id/SRYouid"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/SRuserImage"
+            android:layout_toEndOf="@+id/SRuserImage"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="23dp"
+            android:textColor="#10171f"
+            android:textSize="17dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/HANDICAP"
+            android:id="@+id/SRidhandicap"
+            android:layout_below="@+id/SRYouid"
+            android:layout_alignLeft="@+id/SRYouid"
+            android:layout_alignStart="@+id/SRYouid"
+            android:textColor="#62768b"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="78dp"
+            android:layout_height="50dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/NOTEESSEL"
+            android:id="@+id/SRteesSelected"
+            android:layout_alignTop="@+id/SRYouid"
+            android:layout_toRightOf="@+id/SRidhandicap"
+            android:layout_toEndOf="@+id/SRidhandicap"
+            android:layout_marginLeft="60dp"
+            android:textColor="#62768b"
+            android:textSize="16dp"
+            android:layout_marginTop="2dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="5"
+            android:id="@+id/SRidhandicapvalue"
+            android:textColor="#62768b"
+            android:textSize="16dp"
+            android:layout_alignTop="@+id/SRidhandicap"
+            android:layout_toRightOf="@+id/SRidhandicap"
+            android:layout_toEndOf="@+id/SRidhandicap"
+            android:layout_marginLeft="1dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/SRteeslinear"
+            android:layout_marginTop="5dp"
+            android:visibility="gone">
+
+            <Button
+                android:layout_width="14dp"
+                android:layout_height="22dp"
+                android:id="@+id/SRselecttees"
+                android:layout_alignTop="@+id/SRuserImage"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/rightarrow"
+                android:layout_marginLeft="40dp"
+                android:clickable="false"
+                android:contextClickable="false" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/drawer_layoutSR"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+
+        <ListView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:id="@+id/lv_sliding_menuSR"
+            android:choiceMode="singleChoice"
+            android:layout_gravity="right"></ListView>
+
+    </android.support.v4.widget.DrawerLayout>
+
+
+</RelativeLayout>

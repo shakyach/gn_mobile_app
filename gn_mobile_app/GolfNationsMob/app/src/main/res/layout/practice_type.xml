@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+
+    android:clickable="true"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#ebedf1"
+        android:id="@+id/practicetypeLL"
+        android:layout_marginTop="1dp">
+
+        <TextView
+            android:id="@+id/practiceTypename"
+            android:textColor="#1a2531"
+            android:textSize="18dp"
+            android:layout_alignParentTop="true"
+            android:layout_width="250dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center_vertical"
+            android:text="gggggggg"
+            android:layout_marginTop="5dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/adaplineararrow"
+            android:gravity="right">
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="22dp"
+                android:id="@+id/PracticearrowIm"
+                android:layout_alignTop="@+id/practiceTypename"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/rightarrow"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

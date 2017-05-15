@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:Context="http://schemas.android.com/apk/res-auto"
+
+    tools:context="com.golfnationsmob.GolfView.NewRound.Gps.MapsActivity"
+    android:background="#ffffff">
+
+
+    <fragment
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/map"
+        tools:context="com.golfnationsmob.GolfView.NewRound.Gps.MapsActivity"
+        android:name="com.golfnationsmob.GolfView.NewRound.Gps.TouchableSupportMapFragment"
+        android:layout_marginTop="70dp"
+
+        android:layout_marginBottom="50dp">
+    <Button
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="left|bottom"
+        android:text=""
+        android:padding="10dp"
+        android:id="@+id/zoomup"
+        android:background="@drawable/search"
+        android:layout_marginBottom="30dp"
+        android:paddingRight="10dp"/>
+    </fragment>
+
+    <fragment
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:id="@+id/Topinfo"
+        class="com.golfnationsmob.GolfView.NewRound.Gps.TopStatus" />
+
+    <fragment
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:id="@+id/botinfo"
+        class="com.golfnationsmob.GolfView.NewRound.Gps.BotButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true" />
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="52dp"
+        android:text="RESET"
+        android:id="@+id/buttonresetmap"
+        android:background="#FFAB1A"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:layout_above="@+id/botinfo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_viewhole"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="100dp" />
+    <android.support.v4.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/drawer_layoutmap"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+
+        <ListView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:id="@+id/lv_sliding_menumap"
+            android:choiceMode="singleChoice"
+            android:layout_gravity="right"></ListView>
+
+    </android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>

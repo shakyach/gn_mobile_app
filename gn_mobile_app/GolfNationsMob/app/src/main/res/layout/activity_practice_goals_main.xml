@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.golfnationsmob.GolfView.PracticeGoals.PracticeGoalsMain"
+    android:background="#ffffff"
+    android:clickable="false">
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:text="Practice"
+        android:id="@+id/Bpractice"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#ebedf1"
+        android:textColor="#10171f"
+        android:layout_marginTop="10dp"
+        android:textSize="14dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:text="Goals"
+        android:id="@+id/Bgoals"
+        android:layout_alignBottom="@+id/Bpractice"
+        android:layout_toRightOf="@+id/Bpractice"
+        android:layout_toEndOf="@+id/Bpractice"
+        android:background="#97b4d4"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="2dp"
+        android:textSize="14dp" />
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:text="Instructions"
+        android:id="@+id/Binstruction"
+        android:layout_alignBottom="@+id/Bgoals"
+        android:layout_toRightOf="@+id/Bgoals"
+        android:layout_toEndOf="@+id/Bgoals"
+        android:background="#97b4d4"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="2dp"
+        android:textSize="14dp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollViewpracgoal"
+        android:layout_below="@+id/Bpractice"
+        android:layout_alignParentLeft="true"
+        android:fillViewport="true"
+        android:focusableInTouchMode="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+
+        android:scrollbars="none"
+        >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:id="@+id/linearpracgoal">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Track your progress while you practice !"
+        android:id="@+id/texttrackprac"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="2dp"
+        android:background="#6aa84f"
+        android:gravity="center"
+        android:textColor="#ffffff" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/texttrackprac"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="2dp"
+        android:background="#eeeeee"
+        android:id="@+id/linearpractice"
+        android:visibility="gone">
+
+        <Button
+            android:layout_width="18dp"
+            android:layout_height="26dp"
+            android:id="@+id/recactleft"
+            android:background="@drawable/leftarrow"
+            android:layout_gravity="center"
+            android:layout_marginLeft="55dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recent Activity"
+            android:id="@+id/textView19"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:textColor="#10171f"
+            android:textSize="17dp" />
+
+        <Button
+            android:layout_width="18dp"
+            android:layout_height="26dp"
+            android:id="@+id/recactright"
+            android:layout_gravity="center"
+            android:background="@drawable/rightarrow"
+            android:layout_marginLeft="48dp" />
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/linearpractice"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:visibility="visible"
+        android:id="@+id/linear2prac"
+        android:nestedScrollingEnabled="false">
+
+        <com.github.sundeepk.compactcalendarview.CompactCalendarView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/compactcalendar_view"
+            android:layout_width="250dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_height="250dp"
+            app:compactCalendarTargetHeight="250dp"
+            app:compactCalendarTextSize="12sp"
+            app:compactCalendarBackgroundColor="#ffffff"
+            app:compactCalendarTextColor="#000000"
+            app:compactCalendarCurrentSelectedDayBackgroundColor="#ff0000"
+            app:compactCalendarCurrentDayBackgroundColor="#39bfe6"
+            app:compactCalendarMultiEventIndicatorColor="#fff"
+            app:compactCalendarEventIndicatorStyle="fill_large_indicator"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:visibility="visible" />
+
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/practcaldate"
+            android:layout_gravity="left|top"
+            android:gravity="center"
+            android:background="@drawable/roundblue"
+            android:textColor="#ffffff"
+            android:layout_marginTop="15dp"
+            android:text="15"
+            android:textSize="18dp"
+            android:layout_marginLeft="40dp"
+            android:visibility="gone"
+            android:nestedScrollingEnabled="true" />
+
+        <TextView
+            android:layout_width="230dp"
+            android:layout_height="25dp"
+            android:text="feb 2017"
+            android:id="@+id/montnyearprac"
+            android:gravity="center"
+            android:layout_gravity="top|center"
+            android:layout_marginTop="0dp"
+            android:textColor="#000000"
+            android:visibility="visible"
+            android:textSize="18dp"
+            android:layout_marginLeft="2dp" />
+
+        <Button
+            android:layout_width="12dp"
+            android:layout_height="19dp"
+            android:id="@+id/button"
+            android:layout_gravity="left|top"
+            android:background="@drawable/leftarrow"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="3dp" />
+
+        <Button
+            android:layout_width="12dp"
+            android:layout_height="19dp"
+            android:id="@+id/button2"
+            android:layout_gravity="right|top"
+            android:background="@drawable/rightarrow"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="3dp" />
+
+    </FrameLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_viewpractice"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_below="@+id/linear2prac"
+        android:layout_marginTop="5dp"
+        android:scrollbars="none"
+
+        android:scrollIndicators="none" />
+
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

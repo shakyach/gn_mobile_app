@@ -1,0 +1,130 @@
+<resources>
+    <string name="app_name">Golf Nations</string>
+    <string name="NEWROUND">START A NEW ROUND </string>
+    <string name="POSTSCORE">POST A SCORE </string>
+    <string name="STATSANALYTIC">STATS &amp; ANALYTICS </string>
+    <string name="HOTDEELSTEETIMES">PRACTICE &amp; GOALS </string>
+    <string name="TOURNAEVENTS">TOURNAMENTS &amp; EVENTS </string>
+    <string name="ROUNDSETTING">Start a New Round </string>
+    <string name="TEXTCOURSE">COURSE</string>
+    <string name="NEARESTCOURSE">Nearest Course</string>
+    <string name="TEXTSCORING">SCORING</string>
+    <string name="TEXTSCORETYPE">Stroke Play (Gross)</string>
+    <string name="GOLFERS">GOLFERS</string>
+    <string name="YOU">You</string>
+    <string name="HANDICAP">HANDICAP : </string>
+    <string name="NOTEESSEL">NO TEES SELECTED</string>
+    <string name="CANCEL">CANCEL</string>
+    <string name="NEWROUNDBUTTON">START ROUND</string>
+    <string name="SELECTFOLLOWING">Select one of the following</string>
+    <string name="GROSS">Gross</string>
+    <string name="NET">Net</string>
+    <string name="STROKEPLAY">Stroke Play</string>
+    <string name="MATCHPLAY">Match Play</string>
+    <string name="STABLEFORD">Stableford (Points)</string>
+    <string name="SCRAMBLE">Scramble</string>
+    <string name="CONTINUE">CONTINUE</string>
+    <string name="GOLFER">GOLFER</string>
+    <string name="EDIT">Edit</string>
+    <string name="GOLFERTEE">GOLFER TEES</string>
+    <string name="WHITEMEN">White (Men)</string>
+    <string name="REDLADIES">Red (Ladies)</string>
+    <string name="WHITELADIES">White (Ladies)</string>
+    <string name="GOLDMEN">Gold (Men)</string>
+    <string name="BLACKMEN">Black (Men)</string>
+    <string name="SCORECARD">SCORECARD</string>
+    <string name="EDITPHOTO">Edit Photo</string>
+    <string name="NAME">Name</string>
+    <string name="LASTNAME">LAST</string>
+    <string name="GHIN">GHIN#</string>
+    <string name="STATE">State</string>
+    <string name="EMAIL">Email</string>
+    <string name="SAVE">SAVE</string>
+    <string name="SIGNUPDETAIL"><u><b><i>Sign up for an Officail Handicap</i></b></u></string>
+    <string name="OFFICIALHANDICAP">Do you have a USGA Handicap?</string>
+    <string name="NEARBY">NEARBY</string>
+    <string name="RECENT">RECENT</string>
+    <string name="SEARCH">SEARCH</string>
+    <string name="courseCombinationText">Select your Course combination</string>
+    <string name="FRONT">FRONT</string>
+    <string name="RAPTOR">Raptor</string>
+    <string name="TALAN">Talan</string>
+    <string name="BACK">BACK</string>
+    <string-array name="values2">
+        <item></item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+
+    </string-array>
+
+    <string-array name="values">
+        <item></item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+
+    </string-array>
+    <string-array name="values1">
+
+        <item>2</item>
+        <item>3</item>
+        <item></item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+
+
+    </string-array>
+    <string-array name="values3">
+
+        <item></item>
+        <item>3</item>
+        <item>2</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+
+    </string-array>
+    <string-array name="values_off_the_tee">
+
+        <item>Dr</item>
+        <item></item>
+        <item>3w</item>
+        <item>5w</item>
+        <item>7w</item>
+        <item>9w</item>
+        <item>3w</item>
+        <item>5w</item>
+        <item>7w</item>
+        <item>9w</item>
+        <item>3w</item>
+
+    </string-array>
+    <string name="banner_ad_unit_id">/6499/example/banner</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDzzEVxNwxjHEVOINnHMtBVQIzGAtQTUHI</string>
+    <string name="drawer_opened">Opened</string>
+    <string name="drawer_closed">Closed</string>
+</resources>

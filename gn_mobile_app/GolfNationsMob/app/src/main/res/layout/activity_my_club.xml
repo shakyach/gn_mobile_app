@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.golfnationsmob.GolfView.NewRound.MyClub"
+    android:background="#ffffff">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.golfnationsmob.GolfView.NewRound.MyClub"
+        android:background="#ffffff"
+        android:id="@+id/idrelativemyclub"
+        android:visibility="visible">
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:text="WOODS"
+        android:id="@+id/myclubwood"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#ebedf1"
+        android:textColor="#10171f"
+        android:layout_marginTop="10dp"
+        android:textSize="14dp"
+        android:fontFamily="font/Roboto-Bold_0.ttf" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:text="HYBRIDS"
+        android:id="@+id/myclubhybrid"
+        android:layout_alignBottom="@+id/myclubwood"
+        android:layout_toRightOf="@+id/myclubwood"
+        android:layout_toEndOf="@+id/myclubwood"
+        android:background="#97b4d4"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="2dp"
+        android:textSize="14dp"
+        android:fontFamily="font/Roboto-Bold_0.ttf" />
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:text="IRONS"
+        android:id="@+id/myclubiron"
+        android:layout_alignBottom="@+id/myclubhybrid"
+        android:layout_toRightOf="@+id/myclubhybrid"
+        android:layout_toEndOf="@+id/myclubhybrid"
+        android:background="#97b4d4"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="2dp"
+        android:textSize="14dp"
+        android:fontFamily="font/Roboto-Bold_0.ttf" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_viewmyclub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_marginTop="63dp" />
+
+</RelativeLayout>
+
+    <NumberPicker
+        android:id="@+id/np"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:descendantFocusability="blocksDescendants"
+        android:layout_centerHorizontal="true"
+        android:theme="@style/AppTheme.Picker"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:visibility="gone" />
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/numberPicker"
+        android:layout_alignTop="@+id/np"
+        android:descendantFocusability="blocksDescendants"
+        android:layout_toLeftOf="@+id/np"
+        android:layout_toStartOf="@+id/np"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:theme="@style/AppTheme.Picker"
+        android:visibility="gone" />
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/numberPicker2"
+        android:layout_alignTop="@+id/np"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:descendantFocusability="blocksDescendants"
+        android:layout_toRightOf="@+id/np"
+        android:layout_toEndOf="@+id/np"
+        android:theme="@style/AppTheme.Picker"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="#ebedf1"
+        android:id="@+id/LINEARDRIVEDISTTEXT"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DRIVER DISTANCE"
+            android:id="@+id/textView42"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:textColor="#10171f"
+            android:textSize="15dp"
+            android:fontFamily="font/Roboto-Regular_0.ttf" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:weightSum="2"
+        android:background="#10171f"
+        android:id="@+id/LINEARDRIVEDIST">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="       "
+            android:background="#10171f"
+            android:textColor="#ffffff"
+
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:layout_marginRight="120dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="SAVE"
+            android:id="@+id/idDRIVEDISSsave"
+            android:layout_alignTop="@+id/idmyclub"
+            android:layout_toRightOf="@+id/idmyclub"
+            android:layout_toEndOf="@+id/idmyclub"
+            android:background="#10171f"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="font/Roboto-Regular_0.ttf" />
+    </LinearLayout>
+</RelativeLayout>

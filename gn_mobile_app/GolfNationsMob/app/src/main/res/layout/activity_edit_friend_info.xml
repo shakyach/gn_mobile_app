@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.golfnationsmob.GolfView.NewRound.AddEditFriend"
+    android:background="#ffffff">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:layout_alignParentBottom="true"
+        android:weightSum="2"
+        android:background="#10171f">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="@string/CANCEL"
+        android:background="#10171f"
+        android:textColor="#ffffff"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_weight="1"
+        android:layout_gravity="left|bottom"
+        android:textAlignment="center"
+        android:layout_marginRight="50dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="SAVE"
+        android:id="@+id/ideditinfoSave"
+        android:background="#10171f"
+        android:textColor="#ffffff"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_weight="1"
+        android:layout_gravity="left|bottom"
+        android:textAlignment="center"
+        android:layout_marginLeft="80dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView13"
+        android:layout_marginBottom="55dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:id="@+id/frameLayout"
+                android:layout_gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:id="@+id/idprofilepicED"
+                    android:layout_gravity="center"
+                    android:background="@drawable/profile_default" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/camerabutED"
+                    android:layout_gravity="right|bottom"
+                    android:background="@drawable/icon_camera"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="5dp" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/frameLayout"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="50dp"
+                android:background="#ebedf1"
+                android:id="@+id/linprofile1">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@android:color/transparent"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:text="FIRST NAME"
+                    android:id="@+id/ideditinfofirstname"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="#939fad"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:id="@+id/editinfofirstname"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:background="#ebedf1"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="#10171f"
+                    android:maxLength="12"
+
+                    android:textSize="15dp"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/linprofile1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="2dp"
+                android:background="#ebedf1"
+                android:id="@+id/linprofile2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:text="LAST NAME"
+                    android:id="@+id/editinfoidlastname"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="#939fad"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:id="@+id/editinfolastname"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:background="#ebedf1"
+                    android:maxLength="12"
+
+                    android:layout_marginLeft="30dp"
+                    android:textSize="15dp"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/linprofile2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="2dp"
+                android:background="#ebedf1"
+                android:id="@+id/linprofile3">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:text="EMAIL"
+                    android:id="@+id/ideditinfoemail"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="#939fad"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:id="@+id/editinfoemail1"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:background="#ebedf1"
+                    android:layout_marginLeft="70dp"
+                    android:textSize="15dp"
+                    android:inputType="textWebEmailAddress" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
